@@ -13,6 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import wordflashcards.njwapps.com.wordflashcards.model.Verse;
+import wordflashcards.njwapps.com.wordflashcards.views.VerseCardView;
+
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -133,6 +136,10 @@ public class MainActivity extends ActionBarActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            //TODO: Listview
+            Verse verse = new Verse("Matt 6:33", "33 But seek first his kingdom and his righteousness, and all these things will be given to you as well.");
+            VerseCardView verseCardView = (VerseCardView) rootView.findViewById(R.id.verseCardView);
+            verseCardView.bind(verse);
             return rootView;
         }
 

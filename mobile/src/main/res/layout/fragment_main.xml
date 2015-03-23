@@ -12,6 +12,7 @@
 
     <wordflashcards.njwapps.com.wordflashcards.views.VerseCardView
         xmlns:wordapp="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/verseCardView"
         android:background="#ccc"
         android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="20dp"
         android:paddingBottom="40dp"
