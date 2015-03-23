@@ -5,6 +5,7 @@ package wordflashcards.njwapps.com.wordflashcards.model;
  */
 public class Verse {
 
+    public Long _id;
     private String reference;
     private String text;
     //TODO: translation, but think this through re: freeform text, enum, db lookup, etc.
