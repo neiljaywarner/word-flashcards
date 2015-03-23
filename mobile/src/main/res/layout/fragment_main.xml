@@ -9,4 +9,18 @@
     <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+
+    <wordflashcards.njwapps.com.wordflashcards.views.VerseCardView
+        xmlns:wordapp="http://schemas.android.com/apk/res-auto"
+        android:background="#ccc"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="20dp"
+        android:paddingBottom="40dp"
+        wordapp:translation="NIV"
+        wordapp:referenceColor="@color/reference_color"
+        wordapp:verseColor="@color/verse_color"
+        wordapp:openDrawable="@android:drawable/arrow_down_float"
+        wordapp:closeDrawable="@android:drawable/arrow_up_float" />
+
+    <!-- TODO: open  something like https://github.com/google/material-design-icons/blob/master/navigation/drawable-xxhdpi/ic_expand_more_white_24dp.png -->
+    <!-- see: https://google.github.io/material-design-icons/ -->
 </RelativeLayout>

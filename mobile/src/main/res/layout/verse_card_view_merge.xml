@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/referenceContainer"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:id="@+id/imageViewOpen"
+            android:src="@android:drawable/arrow_down_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageViewClose"
+            android:src="@android:drawable/arrow_up_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="top"
+            android:paddingLeft="5dp"
+            android:id="@+id/textViewReference"
+            android:textSize="20sp"
+            android:text="Jer 29:11-13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/verseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/textViewVerse"
+        android:textSize="15sp"
+        android:text="11 For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future. 12 Then you will call on me and come and pray to me, and I will listen to you. 13 You will seek me and find me when you seek me with all your heart."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@id/textViewVerse"
+        android:id="@+id/textViewTranslation"
+        android:text="(NIV)"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <!--TODO: Flatten/refactor layout for performance? -->
+
+</merge>

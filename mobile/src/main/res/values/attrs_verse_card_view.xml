@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="VerseCardView">
+        <attr name="translation" format="string" />
+        <attr name="verseColor" format="color" />
+        <attr name="referenceColor" format="color" />
+        <attr name="openDrawable" format="reference" />
+        <attr name="closeDrawable" format="reference" />
+
+    </declare-styleable>
+</resources>
